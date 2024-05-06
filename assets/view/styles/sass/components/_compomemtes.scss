@@ -1,0 +1,30 @@
+//nav button
+nav .pageControlling .NavButton {
+    width: 55px;
+    height: 55px;
+    background-color: transparent;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 2s;
+
+    &:hover{
+        background-color: var(--AliceBlueOpacity);
+    }
+}
+
+.heroSc  .heroSc-Title {
+    width: 650px;
+    height: 60px;
+    font-size: 45px;
+    text-transform: capitalize;
+    text-align: center;
+    background-color: wheat;
+}
+
+
+span .textField-Checker {
+    background-color: chocolate;
+    width: 85%;
+    height: 100%;
+    font-size: 30px;
+}

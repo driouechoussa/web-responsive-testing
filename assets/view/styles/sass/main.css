@@ -1,0 +1,111 @@
+:root {
+  /*------------ Colors -----------*/
+  /*Primary*/
+  --Watermelonade: #ec4a52;
+  --Black-Liquorice: rgb(59, 59, 59); /*black*/
+  --Shadowed-Steel: rgb(74, 74, 74); /*light black*/
+  --hard-Coral: rgb(100, 100, 100); /*for button hovering*/
+  /*Other Color*/
+  --AliceBlue: rgb(240, 248, 255);
+  --AliceBlueOpacity: rgb(240, 248, 255,65%);
+  --gray: rgb(226, 226, 226); /*light gray*/
+  /*------------Font and typography-----------*/
+  /*premary Font*/
+  --body-Font: "inter";
+  /*typography*/
+  --Larger-Font-Size: 30px; /*heading*/
+  --Big-Font-Size: 250.0%;
+  --Normal-Font-Size: 218.75%; /* for p */
+  --Small-Font-Size: 156.25%; /*for a*/
+  /*Font weight */
+  --font-regular:400;
+  --font-medium:500; /*for a */
+  --font-semibold:600;
+  --font-bold: 700;
+  /*Borders*/
+  --input-Border: 2px solid var(--Black-Glaze);
+  --rd-Frames: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+header {
+  width: 1920px;
+  height: 1080px;
+  background-color: transparent;
+  background-image: url("../../images/bg-planet-earth.png");
+  background-position: center;
+  background-size: cover;
+}
+header nav {
+  width: 1781px;
+  height: 90px;
+  margin: 0 69px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 120px;
+}
+header nav .logo {
+  width: 50px;
+  height: 50px;
+  background-color: aqua;
+}
+header nav .pageControlling {
+  width: 200px;
+  height: 70px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 25px;
+}
+header .heroSc {
+  width: 1781px;
+  height: 650px;
+  background-color: brown;
+  margin: 0 69px;
+}
+header .heroSc span {
+  width: 957px;
+  height: 78px;
+  border-radius: 15px;
+  display: inline-block;
+  background-color: aliceblue;
+  transform: translateX(50%);
+}
+
+nav .pageControlling .NavButton {
+  width: 55px;
+  height: 55px;
+  background-color: transparent;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 2s;
+}
+nav .pageControlling .NavButton:hover {
+  background-color: var(--AliceBlueOpacity);
+}
+
+.heroSc .heroSc-Title {
+  width: 650px;
+  height: 60px;
+  font-size: 45px;
+  text-transform: capitalize;
+  text-align: center;
+  background-color: wheat;
+}
+
+span .textField-Checker {
+  background-color: chocolate;
+  width: 85%;
+  height: 100%;
+  font-size: 30px;
+}/*# sourceMappingURL=main.css.map */

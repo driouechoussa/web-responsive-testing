@@ -1,0 +1,34 @@
+:root {
+
+    /*------------ Colors -----------*/
+    /*Primary*/
+    --Watermelonade: #ec4a52;
+    --Black-Liquorice: rgb(59, 59, 59); /*black*/
+    --Shadowed-Steel: rgb(74, 74, 74); /*light black*/
+    --hard-Coral: rgb(100, 100, 100); /*for button hovering*/
+    
+    /*Other Color*/
+    --AliceBlue: rgb(240, 248, 255);
+    --AliceBlueOpacity: rgb(240, 248, 255,65%); //with opacity
+    --gray: rgb(226, 226, 226); /*light gray*/
+    
+    /*------------Font and typography-----------*/
+    /*premary Font*/
+    --body-Font: 'inter';
+    
+    /*typography*/
+    --Larger-Font-Size: 30px; /*heading*/
+    --Big-Font-Size: 250.0%;
+    --Normal-Font-Size: 218.75%; /* for p */
+    --Small-Font-Size: 156.25%; /*for a*/
+    
+    /*Font weight */
+    --font-regular :400;
+    --font-medium:500; /*for a */
+    --font-semibold:600;
+    --font-bold: 700;
+    
+    /*Borders*/
+    --input-Border: 2px solid var(--Black-Glaze);
+    --rd-Frames: 20px;
+    }
