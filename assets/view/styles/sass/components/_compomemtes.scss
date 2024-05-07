@@ -14,7 +14,7 @@ nav .pageControlling .NavButton {
 
 .heroSc  .heroSc-Title {
     width: 850px;
-    height: 70px;
+    height: var(--Larger-Font-Size);
     font-size: 60px;
     font-weight: 700;
     color: var(--AliceBlue);
@@ -34,7 +34,7 @@ span .textField-Checker {
     font-size: 30px;
     border-radius: 25px 0px 0px 25px;
     padding-left: 20px;
-    border: #008DC7 solid 3px;
+    border: var(--blue) solid 3px;
     &::placeholder {
         color: var(--Dark-Charcoal);
     }
@@ -44,7 +44,7 @@ span .btn-Check {
 
     width: 15%;
     height: 100%;
-    background-color: #008DC7;
+    background-color: var(--blue);
     border-radius: 0px 25px 25px 0px;
     transition: .4s;
     cursor: pointer;

@@ -5,9 +5,10 @@
   --Dark-Charcoal: rgb(48, 48, 48);
   /*Other Color*/
   --AliceBlueOpacity: rgb(240, 248, 255,65%);
+  --blue: rgb(0, 141, 199);
   /*------------typography-----------*/
   /*typography*/
-  --Larger-Font-Size: 30px; /*heading*/
+  --Larger-Font-Size: 60px; /*heading*/
   --Big-Font-Size: 250.0%;
   --Normal-Font-Size: 218.75%; /* for p */
   --Small-Font-Size: 156.25%; /*for a*/
@@ -98,7 +99,7 @@ nav .pageControlling .NavButton:hover {
 
 .heroSc .heroSc-Title {
   width: 850px;
-  height: 70px;
+  height: var(--Larger-Font-Size);
   font-size: 60px;
   font-weight: 700;
   color: var(--AliceBlue);
@@ -116,7 +117,7 @@ span .textField-Checker {
   font-size: 30px;
   border-radius: 25px 0px 0px 25px;
   padding-left: 20px;
-  border: #008DC7 solid 3px;
+  border: var(--blue) solid 3px;
 }
 span .textField-Checker::-moz-placeholder {
   color: var(--Dark-Charcoal);
@@ -128,7 +129,7 @@ span .textField-Checker::placeholder {
 span .btn-Check {
   width: 15%;
   height: 100%;
-  background-color: #008DC7;
+  background-color: var(--blue);
   border-radius: 0px 25px 25px 0px;
   transition: 0.4s;
   cursor: pointer;
