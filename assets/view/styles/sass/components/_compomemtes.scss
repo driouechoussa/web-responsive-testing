@@ -13,18 +13,48 @@ nav .pageControlling .NavButton {
 }
 
 .heroSc  .heroSc-Title {
-    width: 650px;
-    height: 60px;
-    font-size: 45px;
+    width: 850px;
+    height: 70px;
+    font-size: 60px;
+    font-weight: 700;
+    color: var(--AliceBlue);
     text-transform: capitalize;
     text-align: center;
-    background-color: wheat;
+    margin:auto;
+    position: relative;
+    top: 120px;
+
 }
 
 
 span .textField-Checker {
-    background-color: chocolate;
+    background-color: var(--AliceBlueOpacity);
     width: 85%;
     height: 100%;
     font-size: 30px;
+    border-radius: 25px 0px 0px 25px;
+    padding-left: 20px;
+    border: #008DC7 solid 3px;
+    &::placeholder {
+        color: var(--Dark-Charcoal);
+    }
+}
+
+span .btn-Check {
+
+    width: 15%;
+    height: 100%;
+    background-color: #008DC7;
+    border-radius: 0px 25px 25px 0px;
+    transition: .4s;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: var(--AliceBlue);
+    font-size: 28px;
+    font-weight: 700;
+
+
+    &:hover {
+      background-color: var(--AliceBlueOpacity);
+    }
 }

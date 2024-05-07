@@ -1,17 +1,11 @@
 :root {
   /*------------ Colors -----------*/
   /*Primary*/
-  --Watermelonade: #ec4a52;
-  --Black-Liquorice: rgb(59, 59, 59); /*black*/
-  --Shadowed-Steel: rgb(74, 74, 74); /*light black*/
-  --hard-Coral: rgb(100, 100, 100); /*for button hovering*/
-  /*Other Color*/
   --AliceBlue: rgb(240, 248, 255);
+  --Dark-Charcoal: rgb(48, 48, 48);
+  /*Other Color*/
   --AliceBlueOpacity: rgb(240, 248, 255,65%);
-  --gray: rgb(226, 226, 226); /*light gray*/
-  /*------------Font and typography-----------*/
-  /*premary Font*/
-  --body-Font: "inter";
+  /*------------typography-----------*/
   /*typography*/
   --Larger-Font-Size: 30px; /*heading*/
   --Big-Font-Size: 250.0%;
@@ -27,6 +21,11 @@
   --rd-Frames: 20px;
 }
 
+@font-face {
+  font-family: "Lato";
+  src: url("../../../font/lato/Lato-Bold.ttf");
+  src: url("../../../font/lato/Lato-Regular.ttf");
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -36,6 +35,7 @@
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  font-family: "Lato", sans-serif;
 }
 
 header {
@@ -69,8 +69,7 @@ header nav .pageControlling {
 }
 header .heroSc {
   width: 1781px;
-  height: 650px;
-  background-color: brown;
+  height: 600px;
   margin: 0 69px;
 }
 header .heroSc span {
@@ -78,8 +77,11 @@ header .heroSc span {
   height: 78px;
   border-radius: 15px;
   display: inline-block;
-  background-color: aliceblue;
-  transform: translateX(50%);
+  background-color: transparent;
+  display: flex;
+  position: relative;
+  top: 220px;
+  margin: auto;
 }
 
 nav .pageControlling .NavButton {
@@ -95,17 +97,46 @@ nav .pageControlling .NavButton:hover {
 }
 
 .heroSc .heroSc-Title {
-  width: 650px;
-  height: 60px;
-  font-size: 45px;
+  width: 850px;
+  height: 70px;
+  font-size: 60px;
+  font-weight: 700;
+  color: var(--AliceBlue);
   text-transform: capitalize;
   text-align: center;
-  background-color: wheat;
+  margin: auto;
+  position: relative;
+  top: 120px;
 }
 
 span .textField-Checker {
-  background-color: chocolate;
+  background-color: var(--AliceBlueOpacity);
   width: 85%;
   height: 100%;
   font-size: 30px;
+  border-radius: 25px 0px 0px 25px;
+  padding-left: 20px;
+  border: #008DC7 solid 3px;
+}
+span .textField-Checker::-moz-placeholder {
+  color: var(--Dark-Charcoal);
+}
+span .textField-Checker::placeholder {
+  color: var(--Dark-Charcoal);
+}
+
+span .btn-Check {
+  width: 15%;
+  height: 100%;
+  background-color: #008DC7;
+  border-radius: 0px 25px 25px 0px;
+  transition: 0.4s;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: var(--AliceBlue);
+  font-size: 28px;
+  font-weight: 700;
+}
+span .btn-Check:hover {
+  background-color: var(--AliceBlueOpacity);
 }/*# sourceMappingURL=main.css.map */

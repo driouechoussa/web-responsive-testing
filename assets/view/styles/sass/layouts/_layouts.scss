@@ -33,8 +33,7 @@ header {
 
     .heroSc {
         width: 1781px;
-        height: 650px;
-        background-color: brown;
+        height: 600px;
         margin: 0 69px; 
         
         
@@ -43,9 +42,11 @@ header {
            height: 78px;
            border-radius: 15px;
            display: inline-block;
-           background-color: aliceblue;
-           transform: translateX(50%);
-        
+           background-color: transparent;
+           display: flex;
+           position: relative;
+           top: 220px;
+            margin: auto;
            
         }
     }
