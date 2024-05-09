@@ -58,3 +58,23 @@ span .btn-Check {
       background-color: var(--AliceBlueOpacity);
     }
 }
+
+
+.Topic-item{
+
+    .tpc-title {
+        width: 245px;
+        height: 50px;
+        font-size: var(--Big-Font-Size);
+        text-transform: capitalize;
+        margin-top: 25px;
+        padding-left: 10px;
+        color: var(--AliceBlue);
+       
+    }
+
+    img {
+        margin: 10px;
+    }
+
+}

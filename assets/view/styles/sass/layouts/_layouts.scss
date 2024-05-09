@@ -51,5 +51,28 @@ header {
         }
     }
 
+
+    .topicSc {
+        width: 1781px;
+        height: 280px;
+        margin: 0 69px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 120px;
+
+
+        .Topic-item {
+            width: 350px;
+            height: 100px;
+            background-color: var(--AliceBlueOpacity);
+            border-radius: 15px;
+            display: flex;
+            cursor: pointer;
+
+            
+        }
+
+    }
+
      
 }

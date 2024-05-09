@@ -9,7 +9,7 @@
   /*------------typography-----------*/
   /*typography*/
   --Larger-Font-Size: 60px; /*heading*/
-  --Big-Font-Size: 250.0%;
+  --Big-Font-Size: 40px;
   --Normal-Font-Size: 218.75%; /* for p */
   --Small-Font-Size: 156.25%; /*for a*/
   /*Font weight */
@@ -84,6 +84,22 @@ header .heroSc span {
   top: 220px;
   margin: auto;
 }
+header .topicSc {
+  width: 1781px;
+  height: 280px;
+  margin: 0 69px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 120px;
+}
+header .topicSc .Topic-item {
+  width: 350px;
+  height: 100px;
+  background-color: var(--AliceBlueOpacity);
+  border-radius: 15px;
+  display: flex;
+  cursor: pointer;
+}
 
 nav .pageControlling .NavButton {
   width: 55px;
@@ -140,4 +156,17 @@ span .btn-Check {
 }
 span .btn-Check:hover {
   background-color: var(--AliceBlueOpacity);
+}
+
+.Topic-item .tpc-title {
+  width: 245px;
+  height: 50px;
+  font-size: var(--Big-Font-Size);
+  text-transform: capitalize;
+  margin-top: 25px;
+  padding-left: 10px;
+  color: var(--AliceBlue);
+}
+.Topic-item img {
+  margin: 10px;
 }/*# sourceMappingURL=main.css.map */
