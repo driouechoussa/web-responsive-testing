@@ -80,7 +80,7 @@ header {
 
 .testing-section {
     width: 1920px;
-    height: 1080px;
+    height: 1200px;
     background: transparent;
 
     .section-head {
@@ -100,7 +100,7 @@ header {
             .device-Card {
                 width: 250px;
                 height: 200px;
-                margin: 25px 50px;
+                margin: 30px 50px;
                 border-radius: 15px;
                 cursor: pointer;
                 display: grid;
@@ -118,6 +118,20 @@ header {
                 }
             }
         }
+    }
+
+
+
+    .display-Square {
+        width: inherit;
+        height: 900px;
+        background-color: brown;
+        .im{
+            width: 800px;
+            height: 600px;
+            position: absolute;
+        }
+
     }
 
 

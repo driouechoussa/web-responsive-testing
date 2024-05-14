@@ -103,7 +103,7 @@ header .topicSc .Topic-item {
 
 .testing-section {
   width: 1920px;
-  height: 1080px;
+  height: 1200px;
   background: transparent;
 }
 .testing-section .section-head {
@@ -123,7 +123,7 @@ header .topicSc .Topic-item {
 .testing-section .section-head .devisesSquareCards .device-Card {
   width: 250px;
   height: 200px;
-  margin: 25px 50px;
+  margin: 30px 50px;
   border-radius: 15px;
   cursor: pointer;
   display: grid;
@@ -138,6 +138,16 @@ header .topicSc .Topic-item {
   font-size: 25px;
   text-transform: capitalize;
   font-weight: 400;
+}
+.testing-section .display-Square {
+  width: inherit;
+  height: 900px;
+  background-color: brown;
+}
+.testing-section .display-Square .im {
+  width: 800px;
+  height: 600px;
+  position: absolute;
 }
 
 nav .pageControlling .NavButton {
