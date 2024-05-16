@@ -125,11 +125,16 @@ header {
     .display-Square {
         width: inherit;
         height: 900px;
-        background-color: brown;
-        .im{
-            width: 800px;
-            height: 600px;
-            position: absolute;
+
+        
+
+        .viewer-wrapp{
+            width: 360px;
+            height: 800px;
+            border-radius: 15px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%) translateY(5%);
         }
 
     }

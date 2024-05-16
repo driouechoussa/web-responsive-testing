@@ -142,12 +142,14 @@ header .topicSc .Topic-item {
 .testing-section .display-Square {
   width: inherit;
   height: 900px;
-  background-color: brown;
 }
-.testing-section .display-Square .im {
-  width: 800px;
-  height: 600px;
-  position: absolute;
+.testing-section .display-Square .viewer-wrapp {
+  width: 360px;
+  height: 800px;
+  border-radius: 15px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%) translateY(5%);
 }
 
 nav .pageControlling .NavButton {
