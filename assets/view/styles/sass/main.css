@@ -6,6 +6,7 @@
   /*Other Color*/
   --AliceBlueOpacity: rgb(240, 248, 255,65%);
   --blue: rgb(0, 141, 199);
+  --Snowflake: rgb(240, 240, 240);
   /*------------typography-----------*/
   /*typography*/
   --Larger-Font-Size: 60px; /*heading*/
@@ -24,8 +25,8 @@
 
 @font-face {
   font-family: "Lato";
-  src: url("../../../font/lato/Lato-Bold.ttf");
-  src: url("../../../font/lato/Lato-Regular.ttf");
+  src: url("../../../font/Geomanist/Geomanist-Bold.otf");
+  src: url("../../../font/Geomanist/Geomanist-Regular.otf");
 }
 * {
   box-sizing: border-box;
@@ -121,9 +122,9 @@ header .topicSc .Topic-item {
   display: flex;
 }
 .testing-section .section-head .devisesSquareCards .device-Card {
-  width: 250px;
-  height: 200px;
-  margin: 30px 50px;
+  width: 260px;
+  height: 250px;
+  margin: 5px 50px;
   border-radius: 15px;
   cursor: pointer;
   display: grid;
@@ -150,6 +151,12 @@ header .topicSc .Topic-item {
   position: relative;
   left: 50%;
   transform: translateX(-50%) translateY(5%);
+  border: 5px var(--Dark-Charcoal) solid;
+}
+
+.topicFocusingLook {
+  background-color: var(--Snowflake);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 nav .pageControlling .NavButton {
@@ -210,7 +217,7 @@ span .btn-Check:hover {
 }
 
 .Topic-item .tpc-title {
-  width: 245px;
+  width: 260px;
   height: 50px;
   font-size: var(--Big-Font-Size);
   text-transform: capitalize;
