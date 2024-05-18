@@ -140,6 +140,7 @@ header {
             left: 50%;
             transform: translateX(-50%) translateY(5%);
             border: 5px var(--Dark-Charcoal) solid;
+            transition: width 0.5s, height 0.5s;
         }
 
     }
@@ -154,7 +155,6 @@ header {
 .topicFocusingLook{
     background-color: var(--Snowflake);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    
 }
 
 

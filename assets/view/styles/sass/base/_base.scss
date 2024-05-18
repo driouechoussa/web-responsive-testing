@@ -1,14 +1,14 @@
 
 @font-face {
-    font-family: 'Lato';
-    src: url('../../../font/Geomanist/Geomanist-Bold.otf');
-    src: url('../../../font/Geomanist/Geomanist-Regular.otf');
-}
-
+    font-family: 'Geomanist';
+    src: url("../../../font/Geomanist/Geomanist-Bold.otf");
+    src: url("../../../font/Geomanist/Geomanist-Regular.otf");
+    src: url("../../../font/Geomanist/Geomanist-Medium.otf");
+  }
 * {
     box-sizing: border-box;
     margin: 0; padding: 0;
     border: none; outline: none;
     user-select: none;
-    font-family:'Lato', sans-serif;
+    font-family:'Geomanist', sans-serif;
 }

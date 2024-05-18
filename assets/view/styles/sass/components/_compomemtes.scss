@@ -13,16 +13,16 @@ nav .pageControlling .NavButton {
 }
 
 .heroSc  .heroSc-Title {
-    width: 850px;
-    height: var(--Larger-Font-Size);
-    font-size: 60px;
-    font-weight: 700;
+    width: 950px;
+    height: 70px;
+    font-size: var(--Larger-Font-Size);
+    font-weight: var( --font-bold);
     color: var(--AliceBlue);
     text-transform: capitalize;
     text-align: center;
     margin:auto;
     position: relative;
-    top: 120px;
+    top: 130px;
 
 }
 
@@ -32,6 +32,7 @@ span .textField-Checker {
     width: 85%;
     height: 100%;
     font-size: 30px;
+    font-weight: var(--font-regular);
     border-radius: 25px 0px 0px 25px;
     padding-left: 20px;
     border: var(--blue) solid 3px;
