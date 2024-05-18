@@ -25,3 +25,11 @@ function Devices_Dimensions(width , height) {
     Viewer_Device.style.width = width + 'px';
     Viewer_Device.style.height = height + 'px';
 }
+
+
+function takeTheLinkUrl() {
+
+    
+    Viewer_Device.src = String(document.getElementById('textField').value);
+    
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons and Div Size</title>
+    <style>
+        .button-container {
+            margin-bottom: 20px;
+        }
+        button {
+            margin-right: 10px;
+        }
+        #content {
+            padding: 10px;
+            border: 1px solid #000;
+            width: 100px;
+            height: 100px;
+            transition: width 0.5s, height 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button onclick="changeSize(100, 100)">Size 100x100</button>
+        <button onclick="changeSize(200, 150)">Size 200x150</button>
+        <button onclick="changeSize(300, 200)">Size 300x200</button>
+        <button onclick="changeSize(400, 300)">Size 400x300</button>
+    </div>
+    <div id="content">
+        Resize me!
+    </div>
+
+    <script>
+        function changeSize(width, height) {
+            const contentDiv = document.getElementById('content');
+            contentDiv.style.width = width + 'px';
+            contentDiv.style.height = height + 'px';
+        }
+    </script>
+</body>
+</html>
