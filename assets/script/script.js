@@ -29,7 +29,17 @@ function Devices_Dimensions(width , height) {
 
 function takeTheLinkUrl() {
 
+    var Viewer_Device_Value = String(document.getElementById('textField').value);
+        const urlPattern = new RegExp('^(https?:\\/\\/)?' + 
+            '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|' +
+            '((\\d{1,3}\\.){3}\\d{1,3}))' + // 
+            '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*' +
+            '(\\?[;&a-z\\d%_.~+=-]*)?' + 
+            '(\\#[-a-z\\d_]*)?$', 'i'); 
     
-    Viewer_Device.src = String(document.getElementById('textField').value);
-    
+        if (urlPattern.test(Viewer_Device_Value)) {
+           Viewer_Device.src = Viewer_Device_Value;
+        } else {
+            alert('Please enter a valid URL.');
+        }
 }
