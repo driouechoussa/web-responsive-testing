@@ -13,9 +13,6 @@ header {
         display: flex;
         justify-content: space-between;
         padding: 10px 120px;
-        background-color: #a32222;
-
-      
 
         .logo {
             width: 50px;
@@ -24,12 +21,38 @@ header {
         }
 
         .pageControlling {
-            max-width: 200px;
-            max-height: 70px;
             background-color: transparent;
             display: flex;
             justify-content: space-between;
             padding: 7px 25px;
+        }
+
+        @media screen and (min-width:375px) and (max-width:480px) {
+            height: 50px;
+            padding: 5px  10px;
+            
+            .logo {
+                width: 90px;
+                height: 40px;
+                background-color: aqua;
+            }
+            .pageControlling {
+                padding: 0px 15px;
+                
+                .NavButton {
+                    width: 40px;
+                    height: 40px;
+                    margin: 0 10px;
+
+                    img {
+                        width: 40px;
+                    }
+                    &:last-child {
+                        display: none;
+                    }
+                }
+            }
+
         }
 
     }
@@ -40,29 +63,59 @@ header {
         height: 600px; 
         
         
+        
         span {
-           width: 957px;
+           width: 80%;
            height: 78px;
            border-radius: 15px;
            display: inline-block;
            background-color: transparent;
            display: flex;
            position: relative;
-           top: 220px;
+           top: 180px;
             margin: auto;
            
         }
+
+        @media screen and (min-width:375px) and (max-width:480px) {  
+            
+        height: 40%;
+            .heroSc-Title{
+                font-size: 28px;
+            }
+
+            span {
+                height: 50px;
+                border-radius: 15px; 
+                
+            .textField-Checker {
+                    width: 70%;
+                    height: 100%;
+                    font-size: 17px;
+                    border-radius: 15px 0px 0px 15px;
+                    padding-left: 20px;
+                    border: var(--blue) solid 3px;  
+                }
+                .btn-Check {
+                    width: 30%;
+                    height: 100%;
+                    border-radius: 0px 15px 15px 0px;
+                    font-size: 17px;
+                    font-weight: 500;
+                }
+             }
+        }
+
+        
     }
 
 
     .topicSc {
         width: 100%;
-        height: 280px;
+        height: 20%;
         display: flex;
         justify-content: space-between;
-
-
-
+        
         .Topic-item {
             width: 350px;
             height: 100px;
@@ -74,7 +127,21 @@ header {
             
         }
 
+
+        @media screen and (min-width:375px) and (max-width:480px) {
+            height: 25%;
+            display: grid;
+            grid-template-columns: 200px 250px;
+            
+            .Topic-item {
+                width: 200px;
+               margin: 15px 20px;
+            }
+        }
+
     }
+
+
 
      
 }
