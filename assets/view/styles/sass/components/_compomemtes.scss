@@ -14,6 +14,10 @@ nav .pageControlling .NavButton {
 
 }
 
+nav .pageControlling .sideMenuBtn {
+    display: none;
+}
+
 .heroSc  .heroSc-Title {
     width: 80%;
     height: 70px;
@@ -23,8 +27,8 @@ nav .pageControlling .NavButton {
     text-transform: capitalize;
     text-align: center;
     margin:auto;
-    position: relative;
-    top: 130px;
+
+
 
 }
 
