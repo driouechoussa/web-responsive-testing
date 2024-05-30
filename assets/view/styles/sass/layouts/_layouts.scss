@@ -9,7 +9,7 @@ header {
 
     nav {
         width: 100%;
-        height: 90px;
+        min-height: 5%;
         display: flex;
         justify-content: space-between;
         padding: 10px 120px;
@@ -28,7 +28,6 @@ header {
         }
 
         @media screen and (min-width:375px) and (max-width:480px) {
-            height: 50px;
             padding: 5px  10px;
             
             .logo {
@@ -55,31 +54,47 @@ header {
 
         }
 
+
+        @media screen and (min-width:1280px) and (max-width:1920px) {
+            .pageControlling {
+                height: 40px;
+                .NavButton {
+                    width: 35px;
+                    height: 30px;
+                    margin: 0 10px;
+
+                    img {
+                        width: 30px;
+                    }
+                }
+            }
+            .logo {
+                height: 40px;
+            }
+        }
+
     }
 
 
     .heroSc {
         width: 100%;
-        height: 600px; 
-        
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 100px 0;
         
         
         span {
-           width: 80%;
-           height: 78px;
-           border-radius: 15px;
+            border-radius: 15px;
            display: inline-block;
            background-color: transparent;
            display: flex;
-           position: relative;
-           top: 180px;
-            margin: auto;
+           margin: auto;
            
         }
 
         @media screen and (min-width:375px) and (max-width:480px) {  
-            
-        height: 40%;
             .heroSc-Title{
                 font-size: 28px;
             }
@@ -106,69 +121,86 @@ header {
              }
         }
 
-        
+        @media screen and (min-width:1280px) and (max-width:1920px) {
+           
+            .heroSc-Title{
+                font-size: var(--Larger-Font-Size);
+            }
+
+            span {
+                width: 50%;
+                height: 55px;
+                
+             }
+        }
+
     }
 
 
     .topicSc {
         width: 100%;
-        height: 20%;
+        height: 30%;
         display: flex;
         justify-content: space-between;
         
         .Topic-item {
-            width: 350px;
-            height: 100px;
             background-color: var(--AliceBlueOpacity);
             border-radius: 15px;
             display: flex;
             cursor: pointer;
-
-            
         }
 
-
         @media screen and (min-width:375px) and (max-width:480px) {
-            height: 25%;
+            max-height: 250px;
             display: grid;
-            grid-template-columns: 200px 250px;
-            
+            grid-template-columns:auto auto;
             .Topic-item {
-                width: 200px;
+               width: 150px;
                margin: 15px 20px;
+               img {
+                width: 60px;
+                height: 60px;
+               }
             }
         }
 
+        @media screen and (min-width:1280px) and (max-width:1920px) {
+            .Topic-item {
+                width: 250px;
+                height: 100px ;
+                margin: 40px;
+            }
+        }
     }
-
-
-
-     
+  
 }
+
+
+
+
 
 
 .testing-section {
     width: 100%;
     height: 1200px;
     background: transparent;
+    
 
     .section-head {
         width: inherit;
         height: 300px;
-        background-color: #f1f1f1a8; 
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 
         .devisesSquareCards {
-            width: 1400px;
+            width: 100%;
             height: 250px;
             position: relative;
             top: 25px;
             display: flex;
+            
 
             .device-Card {
-                width: 260px;
-                height: 250px;
-                margin: 5px 50px;
+                
                 border-radius: 15px;
                 cursor: pointer;
                 display: grid;
@@ -177,9 +209,8 @@ header {
                     margin: auto;
                 }
                 span {
-                    width: 100%;
                     text-align: center;
-                    padding-top: 20px;
+
                     font-size: 25px;
                     text-transform: capitalize;
                     font-weight: 400;
@@ -188,14 +219,15 @@ header {
                 
             }
         }
+
+
+       
     }
 
 
     .display-Square {
         width: inherit;
         height: 900px;
-
-        
 
         .viewer-wrapp{
             width: 360px;
@@ -211,7 +243,19 @@ header {
     }
 
 
-  
+    @media screen and (min-width:375px) and (max-width:480px) {
+        
+    }
+
+
+    @media screen and (min-width:1280px) and (max-width:1920px) {
+        .device-Card {
+            width: 260px;
+            height: 250px;
+            margin: 5px 50px;
+        }
+    }
+
 
 
 } 
